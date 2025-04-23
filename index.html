@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Origin Flow</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: sans-serif;
+      background-color: #000;
+      color: #fff;
+      overflow-x: hidden;
+    }
+    .hero {
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+    }
+    .hero video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .overlay h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <video autoplay muted loop playsinline>
+      <source src="origin-touch-hero.mp4" type="video/mp4" />
+      お使いのブラウザは動画に対応していません。
+    </video>
+    <div class="overlay">
+      <h1>Origin Flow - 本来の自分に還るリチュアル</h1>
+    </div>
+  </section>
+</body>
+</html>
